@@ -36,11 +36,22 @@ body {
 
 /* arrange the puzzle pieces on the board */
 
-
+.drop-zone img {
+	width: auto !important;
+	padding: 0 !important;
+	cursor: pointer;
+	position: absolute;
+}
 
 /* set up drop zones */
 
-
+.drop-zone {
+	width: 49.5%;
+	height: 49.5%;
+	border: thin dashed white;
+	float: right;
+	position: relative;
+}
 
 /* end board styles */
 
@@ -59,10 +70,10 @@ header h1 {
 	margin: 10px 0
 }
 
-header p, footer p { 
-	font-size: 1.7em; 
-	letter-spacing: 2px; 
-	margin: 10px 0 
+header p, footer p {
+	font-size: 1.7em;
+	letter-spacing: 2px;
+	margin: 10px 0
 }
 
 footer {
@@ -72,9 +83,9 @@ footer {
 	text-align: center;
 }
 
-#buttonHolder { margin: 0px auto; text-align: center; }
+#button-holder { margin: 0px auto; text-align: center; }
 
-#buttonHolder img {
+#button-holder img {
 	margin-left: 5px;
 	margin-right: 5px;
 	border-radius: 20px;
@@ -82,4 +93,4 @@ footer {
 	cursor: pointer;
 }
 
-#buttonHolder img:hover { opacity: .5; }
+#button-holder img:hover { opacity: .5; }

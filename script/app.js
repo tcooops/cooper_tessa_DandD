@@ -6,7 +6,8 @@
 	      puzzleBoard = document.querySelector('.puzzle-board'),
 		  dropZones = document.querySelectorAll('.drop-zone')
 		  puzzlePiece = document.querySelectorAll('.puzzle-pieces img');
-
+			
+			//dropZones.appendChild([index]);
 	// store images names here
 	const pieces = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 
@@ -50,10 +51,15 @@
 			console.log('you dropped something onto me!')
 
 		   	let currentPiece = event.dataTransfer.getData ("text/plain");
+
 		   	event.target.appendChild(document.querySelector(`#${currentPiece}`))
 		}
-
 	}
+//  let puzzleBoard = document.getElementById("puzzle-board");
+//  let dropZones = document.getElementById("drop-zone");
+//		while (puzzleBoard.firstChild) {
+//			puzzleBoard.removeChild(puzzleBoard.firstChild);
+//		 }
 
 	// add some event handling for the nav navButtons
 	navButtons.forEach(button => button.addEventListener('click', changeImageSet));
